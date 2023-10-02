@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CineFlix</title>
+        <link rel="icon" href="icon.png" type="image/x-icon">
+        <style>
+            /* Your existing CSS goes here */
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 150px;
+  height: 70px;
+}
+
+  .sign-up-button {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: right;
+  }
+
+
+h2{
+ position: absolute;
+ top: 35%;
+ left: 28%;
+ color: white;
+ font-size: 30px;
+}
+
+p{
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join-us-button {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .join-us-button:hover {
+    background-color:brown;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fff; /* Change the text color to your preference */
+    padding: 20px; /* Adjust padding as needed */
+    z-index: 1; /* Bring the footer to the front */
+}
+
+            /* Now we add media queries for responsiveness */
+            @media only screen and (max-width: 600px) {
+                /* For mobile phones: */
+                .background-video video {
+                    width: 100%;
+                    height: auto;
+                }
+                .logo {
+                    width: 75px;
+                    height: 35px;
+                }
+                .sign-up-button {
+                    width: 50px;
+                    height: 25px;
+                    font-size: 8px;
+                }
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 10px;
+                }
+                .join-us-button {
+                    width: 200px;
+                    height: 25px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Your existing HTML goes here -->
+          <div class="background-video">
+              <video autoplay loop muted>
+                <source src="bg2.mp4" type="video/mp4">
+              </video>
+            </div> 
+          <a href="index.html">
+          <img src="logo.png" class="logo">
+      </a>
+    <button class="sign-up-button"  onclick="location.href='signup.html'">Sign Up</button>
+    <h2>Unlimited Movies,Tv Shows & Much More</h2>
+    <p>WE HAVE NETFLIX,AMAZON PRIME & HBO MEDIA</p>
+    <button class="join-us-button" onclick="location.href='signup.html'">Join Us</button>
+    <div class="footer">
+    Copyrights &copy; Reserved. 2024.
+  </div>
+    </body>
+</html>
