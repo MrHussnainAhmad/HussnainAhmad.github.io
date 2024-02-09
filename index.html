@@ -18,15 +18,17 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Hire Now</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hire-now">Hire Now</a></li>
+                    
                 </ul>
             </nav>
         </header>
     </section>
+
     <!-- section-2 :HOME -->
     <section id="home">
         <div class="container">
@@ -34,6 +36,7 @@
             <span class="text sec-text">Hello!</span>
         </div>
     </section>
+
     <!-- section-3 :about -->
     <section id="about">
         <div class="container3">
@@ -135,10 +138,41 @@
             </div>
         </div>
     </section>
+
     <!-- section-5 :projects -->
-    <section id="projects"></section>
+    <section id="projects">
+        <div class="container4">
+            <h1>Projects</h1>
+            <div class="projects-row">
+                <div class="projects-content">
+                    <h2>Portfolio (Self)</h2>
+                    <p>Used: Html,css and Javascript</p>
+                    <p>Duration: 1 Day</p>
+                </div>
+                <div class="projects-content">
+                    <h2>Portfolio (Client)</h2>
+                    <p>Used: Html,css and Javascript</p>
+                    <p>Duration: 2 Days</p>
+                    <p>Verify</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- section-6 :hire-now -->
-    <section id="hire-now"></section>
+    <section id="hire-now">
+        <div class="container5">
+          <h2>Hire Now</h2>
+          <div class="hire-info">
+            <p>Looking for top-notch talent to drive your projects forward?</p>
+            <p>Our team of experienced developers is ready to take on your challenges.</p>
+            <button class="hire-btn">Get in Touch</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- section-7 :footer -->
+<section id="footer">Website Proudly Made by : Hussnain Ahmad</section>
 </body>
 <!-- SCRIPTS -->
 <script>
@@ -161,7 +195,7 @@
         } else if (elapsed < 16000) {
             firstText.textContent = "I Love ";
         } else if (elapsed < 20000) {
-            firstText.textContent = "I Can Create";
+            firstText.textContent = "I Can Create ";
         } else {
             startTime = timestamp; // Reset animation
         }
@@ -184,5 +218,25 @@
 
     requestAnimationFrame(animateText);
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+  
+    for (const link of links) {
+        link.addEventListener("click", clickHandler);
+    }
+  
+    function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+    
+        scroll({
+            top: offsetTop,
+            behavior: "smooth"
+        });
+    }
+});
 
+</script>
 </html>
