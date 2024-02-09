@@ -1,0 +1,340 @@
+
+body, h1, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none; /* Remove underline from links */
+}
+#header {
+    background-color: transparent; /* Background color */
+    padding: 20px 0; /* Padding around the home section */
+}
+
+#header header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    background-color: transparent; /* Transparent background */
+}
+
+.logo h1 {
+    color: white; /* Font color */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for layout */
+}
+
+nav ul li {
+    margin-right: 24px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: wheat; /* Font color */
+    transition: text-decoration 0.3s ease; /* Smooth transition for text-decoration */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+#home {
+    background-color: black;
+    color: white; /* Set text color to white for better visibility */
+    padding: 20px; /* Example padding */
+    max-width: auto; /* Example max width */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 400px; /* Example height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+#education {
+    background-color: #fff;
+    color: black; /* Set text color to white for better visibility */
+    padding: 20px; /* Example padding */
+    max-width: auto; /* Example max width */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 500px; /* Example height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Set position to relative */
+}
+.container2 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-flexbox;
+}
+
+#education h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.education-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    
+}
+
+.education-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 15px;
+    width: 300px;
+}
+
+.education-item h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.Certificate-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 15px;
+    width: 300px;
+}
+
+.Certificate-item h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Certificate-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+#verify {
+    color: red; 
+    transition: color 0.3s; 
+}
+
+#verify:hover {
+    color: blue; 
+}
+#about {
+    padding: 20px; /* Example padding */
+    max-width: auto; /* Example max width */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 400px; /* Example height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+.container3 {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
+    padding: 0 20px; /* Add padding from left for text */
+    color: #fff;
+}
+
+.about-image {
+    width: 50%;
+    padding: 0 20px; /* Add padding from right for image */
+    text-align: center; /* Center image */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+
+#projects {
+    padding: 20px; /* Example padding */
+    max-width: auto; /* Example max width */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 400px; /* Example height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+#hire-now {
+    padding: 20px; /* Example padding */
+    max-width: auto; /* Example max width */
+    margin: 0 auto; /* Center the section horizontally */
+    height: 400px; /* Example height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+
+/* TYPE */
+      .container {
+        width: 346px;
+        overflow: hidden;
+      }
+      .container .text {
+        position: relative;
+        color: #35df01;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .container .text.first-text {
+        color: #fff;
+      }
+      .text.first-text:before,
+      .text.sec-text:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #010718;
+        border-left: 2px solid #35df01;
+        animation: animate 4s steps(12) infinite;
+      }
+      .text.sec-text:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #010718;
+        border-left: 2px solid #35df01;
+        animation: animate 4s steps(12) infinite;
+      }
+      @keyframes animate {
+        40%,
+        60% {
+          left: calc(100% + 4px);
+        }
+        100% {
+          left:0%;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #home header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .logo h1 {
+        margin-bottom: 10px; /* Space below logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 10px; /* Space between navigation items */
+    }
+}
+@media (max-width: 962px) {
+    .education-item, .Certificate-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-text,
+    .about-image {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-text,
+    .about-image {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+/* Media Queries for Responsive Layout */
+@media only screen and (max-width: 600px) {
+    #education {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .education-item,
+    .Certificate-item {
+        width: 100%;
+        margin: 10px;
+    }
+}
