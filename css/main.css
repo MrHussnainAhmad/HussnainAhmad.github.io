@@ -4,57 +4,57 @@ body, h1, h2, h3, ul, li, a {
     padding: 0;
     background: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; 
 }
 #header {
-    background-color: transparent; /* Background color */
-    padding: 20px 0; /* Padding around the home section */
+    background-color: transparent; 
+    padding: 20px 0; 
 }
 
 #header header {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center items vertically */
-    background-color: transparent; /* Transparent background */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: transparent; 
 }
 
 .logo h1 {
-    color: white; /* Font color */
+    color: white; 
 }
 .logo h1:hover{
     color: #35df01;
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    display: flex; /* Use flexbox for layout */
+    list-style-type: none; 
+    display: flex;
 }
 
 nav ul li {
-    margin-right: 24px; /* Space between navigation items */
+    margin-right: 24px; 
 }
 
 nav ul li a {
-    color: wheat; /* Font color */
-    transition: text-decoration 0.3s ease; /* Smooth transition for text-decoration */
+    color: wheat; 
+    transition: text-decoration 0.3s ease; 
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline text on hover */
+    text-decoration: underline; 
 }
 
 /*Home*/
 
 #home {
     background-color: black;
-    color: white; /* Set text color to white for better visibility */
-    padding: 20px; /* Example padding */
-    max-width: auto; /* Example max width */
-    margin: 0 auto; /* Center the section horizontally */
-    height: 200px; /* Example height */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    color: white; 
+    padding: 20px; 
+    max-width: auto; 
+    margin: 0 auto; 
+    height: 200px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 /* Home-TYPE */
 .container {
@@ -78,7 +78,7 @@ nav ul li a:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #010718;
+    background-color: black;
     border-left: 2px solid #35df01;
     animation: animate 4s steps(12) infinite;
   }
@@ -89,7 +89,7 @@ nav ul li a:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #010718;
+    background-color: black;
     border-left: 2px solid #35df01;
     animation: animate 4s steps(12) infinite;
   }
@@ -108,13 +108,13 @@ nav ul li a:hover {
 /* ABOUT */
 
 #about {
-    padding: 20px; /* Example padding */
-    max-width: auto; /* Example max width */
-    margin: 0 auto; /* Center the section horizontally */
-    height: 400px; /* Example height */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    padding: 20px; 
+    max-width: auto; 
+    margin: 0 auto; 
+    height: 400px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 .container3 {
     max-width: 960px;
@@ -134,14 +134,14 @@ nav ul li a:hover {
 
 .about-text {
     width: 50%;
-    padding-right: 10px; /* Add padding from right for text */
+    padding-right: 10px; 
     color: #fff;
 }
 
 .about-image {
     width: 50%;
-    padding-left: 10px; /* Add padding from left for image */
-    text-align: center; /* Center image */
+    padding-left: 10px; 
+    text-align: center; 
 }
 
 .about-image img {
@@ -157,16 +157,16 @@ nav ul li a:hover {
 
 #education {
     background-color: #fff;
-    color: black; /* Set text color to white for better visibility */
-    padding: 20px; /* Example padding */
-    max-width: auto; /* Example max width */
-    margin: 0 auto; /* Center the section horizontally */
-    height: 550px; /* Example height */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center the content horizontally */
-    position: relative; /* Set position to relative */
+    color: black; 
+    padding: 20px; 
+    max-width: auto; 
+    margin: 0 auto; 
+    height: 550px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    position: relative; 
 }
 .container2 {
     max-width: 100%;
@@ -243,13 +243,13 @@ nav ul li a:hover {
 /* PROJECT */
 
 #projects {
-    padding: 20px; /* Example padding */
-    max-width: auto; /* Example max width */
-    margin: 0 auto; /* Center the section horizontally */
-    height: auto; /* Example height */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    padding: 20px; 
+    max-width: auto; 
+    margin: 0 auto; 
+    height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -293,12 +293,12 @@ nav ul li a:hover {
 
 
 #hire-now {
-    max-width: auto; /* Example max width */
-    margin: 0 auto; /* Center the section horizontally */
-    height: 400px; /* Example height */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    max-width: auto; 
+    margin: 0 auto; 
+    height: 400px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     background-color: white;
     color: #010718;
 }
@@ -351,60 +351,32 @@ nav ul li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive design */
 /*Header*/
 @media screen and (max-width: 768px) {
     #header header {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center text */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .logo h1 {
-        margin-bottom: 10px; /* Space below logo */
+        margin-bottom: 10px;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: column;
     }
 
     nav ul li {
-        margin-right: 0; /* Remove margin */
-        margin-bottom: 10px; /* Space between navigation items */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 }
 
 /*Edu*/
 @media (max-width: 962px) {
     .education-item, .Certificate-item {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%; /* Full width on small device*/
     }
 }
 /*About-img*/
